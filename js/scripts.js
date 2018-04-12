@@ -1,17 +1,14 @@
 var a = 2;
-var h = 3;
-var a = prompt("Type base of triangle");
-var h = prompt("Type height of triangle");
-var triangleArea = a*h/2;
-console.log('Triangle field with base a: ' + a + ' and height h: ' + h + ' is equal to: ' + triangleArea); 
+var b = 3;
+var a = prompt("Type value a");
+var b = prompt("Type value b");
+var value = (a * a) - (2 * a * b) - (b * b);
+console.log("Result is: "+ value); 
 
-/* Drugi sposób, znaleziony w necie, z wykorzystaniem "parseInt":
-
-var a1 = prompt("Type base of triangle");
-var h1 = prompt("Type height of triangle");
-var a = parseInt(a1);
-var h = parseInt(h1);
-var triangleArea = a*h/2;
-console.log('Triangle field with base a: ' + a + ' and height h: ' + h + ' is equal to: ' + triangleArea); */
-
-
+if (value > 0) {
+    console.log("Result positive")
+} else if (value < 0) {
+    console.log("Result negative")
+} else {
+    console.log("Result equals zero")
+}
