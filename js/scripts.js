@@ -1,14 +1,43 @@
-var a = 2;
-var b = 3;
-var a = prompt("Type value a");
-var b = prompt("Type value b");
-var value = (a * a) - (2 * a * b) - (b * b);
-console.log("Result is: "+ value); 
+var list = document.getElementById('list');
+var add = document.getElementById('addElem');
 
-if (value > 0) {
-    console.log("Result positive")
-} else if (value < 0) {
-    console.log("Result negative")
-} else {
-    console.log("Result equals zero")
+
+add.addEventListener('click', function(e) {
+  var element = document.createElement('li');
+  element.innerHTML = 'item';
+  var itemsByTagName = document.getElementsByTagName('li'); 
+		  
+	  
+  list.appendChild(element);
+  
+  /*console.log(itemsByTagName.length) */
+  
+  /* var dlugosc = document.getElementsByTagName.length;
+	console.log(dlugosc)  */
+	
+	var dlugosc = itemsByTagName.length;
+	console.log(dlugosc)
+	
+}); 
+
+
+
+
+
+
+
+
+
+
+/* function checkOnclickEvent(param) {
+  console.log(param);
 }
+var inputElem = document.getElementById('js-inputValue'),
+    imageElem = document.getElementById('js-image');
+
+imageElem.addEventListener('click', function(e) {
+  checkOnclickEvent('image was clicked')
+});
+inputElem.addEventListener('keypress', function(e) {
+  e.target.value += ' test ';
+}); */
